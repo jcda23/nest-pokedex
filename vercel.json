@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "buildCommand": "nest build",
+    "buildCommand": "yarn build",
     "builds": [
         {
             "src": "src/main.ts",
