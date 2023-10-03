@@ -1,9 +1,3 @@
-
-
-
-
-
-
-export interface HttpAdapter{
-    get<T>(url: string): Promise<T>
+export interface HttpAdapter {
+  get<T>(url: string): Promise<T>;
 }

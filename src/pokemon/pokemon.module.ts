@@ -9,16 +9,13 @@ import { ConfigService } from '@nestjs/config';
   controllers: [PokemonController],
   providers: [PokemonService, ConfigService],
   imports: [
-    MongooseModule.forFeature([ 
+    MongooseModule.forFeature([
       {
         name: Pokemon.name,
-        schema: PokemonSchema
-      }
-    ])
+        schema: PokemonSchema,
+      },
+    ]),
   ],
-  exports:[
-    MongooseModule, 
-    PokemonService
-  ]
+  exports: [MongooseModule, PokemonService],
 })
 export class PokemonModule {}
